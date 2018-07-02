@@ -3651,7 +3651,7 @@ int ceph_mdsc_init(struct ceph_fs_client *fsc)
 	mdsc->pool_perm_tree = RB_ROOT;
 
 	strncpy(mdsc->nodename, utsname()->nodename,
-		sizeof(mdsc->nodename) - 1);
+		sizeof(mdsc->nodename));
 	return 0;
 }
 
